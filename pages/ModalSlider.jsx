@@ -28,7 +28,7 @@ const ModalSlider = (props) => {
           </div>
           <div className={styles.modal__slider__container}>
             <Slider {...settings} className={styles.modal__slider__attraction}>
-              {props.attractions.map((attraction, index) => {
+              {props.attractions?props.attractions.map((attraction, index) => {
                 return (
                   <li key={index}>
                     <img
@@ -38,7 +38,7 @@ const ModalSlider = (props) => {
                     />
                   </li>
                 );
-              })}
+              }):null}
             </Slider>
           </div>
         </div>
