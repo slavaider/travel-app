@@ -16,8 +16,8 @@ import YouTube from "react-youtube";
 import { connect } from "react-redux";
 import { withRouter } from "next/router";
 import { fetchAll } from "../store/actions";
-import ModalMap from "../components/ModalMap";
-import ModalSlider from "../components/ModalSlider";
+import ModalMap from "./ModalMap";
+import ModalSlider from "./ModalSlider";
 import HomeIcon from "@material-ui/icons/Home";
 import ZoomOutMapIcon from "@material-ui/icons/ZoomOutMap";
 

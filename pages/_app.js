@@ -9,7 +9,7 @@ import Head from "next/head";
 import React from "react";
 import { Provider } from "react-redux";
 import store from "../store/store";
-import Footer from "../components/footer";
+import Footer from "./footer";
 
 function App({ Component, pageProps }) {
   return (
