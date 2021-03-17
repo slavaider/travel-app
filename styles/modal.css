@@ -1,0 +1,122 @@
+.modal_wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+	z-index: 2;
+}
+
+.modal_wrapper.open {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.modal_wrapper.close {
+	height: 0;
+	display: none;
+}
+
+.modal_body {
+	width: 80%;
+	height: 60%;
+	margin: auto;
+	background: rgba(231, 231, 231, 0.5);
+	margin-top: 5%;
+	padding: 20px;
+	border-radius: 10px;
+	max-height: none;
+	overflow-y: hidden;
+	box-shadow: 5px 5px 15px;
+}
+
+.modal_body h2 {
+	text-align: left;
+	width: 100%;
+	margin: 0;
+	opacity: 1;
+}
+
+.modal_body::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+
+.modal_close {
+	text-align: right;
+	margin-top: -15px;
+	font-size: 40px;
+	color: gray;
+	cursor: pointer;
+}
+
+@media only screen and (max-width:650px) {
+	.modal_body {
+		width: 95%;
+		height: 95%;
+		
+	}
+}
+
+@media only screen and (max-width:768px) and (min-width:651px) {
+		.modal_body {
+			width: 80%;
+			height: 60%;
+			margin: auto;
+			background: rgba(231, 231, 231, 0.5);
+			margin-top: 5%;
+			padding: 20px;
+			border-radius: 10px;
+			max-height: none;
+			overflow-y: hidden;
+			box-shadow: 5px 5px 15px;
+		}
+}
+
+@media only screen and (min-width:769px) {
+	.modal_body {
+		width: 80%;
+		height: 58%;
+		margin: auto;
+		background: rgba(231, 231, 231, 0.5);
+		margin-top: 5%;
+		padding: 20px;
+		border-radius: 10px;
+		max-height: none;
+		overflow-y: hidden;
+		box-shadow: 5px 5px 15px;
+	}
+}
+
+@media only screen and (min-width:1366px) {
+	.modal_body {
+		width: 65%;
+		height: 60%;
+		margin: auto;
+		background: rgba(231, 231, 231, 0.5);
+		margin-top: 5%;
+		padding: 20px;
+		border-radius: 10px;
+		max-height: none;
+		overflow-y: hidden;
+		box-shadow: 5px 5px 15px;
+	}
+}
+
+@media only screen and (min-width:1600px) {
+	.modal_body {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		background: rgba(231, 231, 231, 0.5);
+		margin-top: 5%;
+		padding: 20px;
+		border-radius: 10px;
+		max-height: none;
+		overflow-y: hidden;
+		box-shadow: 5px 5px 15px;
+	}
+}

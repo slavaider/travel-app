@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import styles from "../styles/modal.module.css";
+import styles from "../styles/modalMap.module.css";
 import CancelIcon from "@material-ui/icons/Cancel";
 
 const ModalSlider = (props) => {
@@ -14,7 +14,6 @@ const ModalSlider = (props) => {
     fade: true,
     cssEase: "linear",
   };
-  //console.log(props.attractions);
   return (
     <>
       <div
@@ -30,7 +29,6 @@ const ModalSlider = (props) => {
           <div className={styles.modal__slider__container}>
             <Slider {...settings} className={styles.modal__slider__attraction}>
               {props.attractions.map((attraction, index) => {
-                //console.log(attraction);
                 return (
                   <li key={index}>
                     <img

@@ -1,52 +1,274 @@
-.modal__body {
-   overflow: hidden;
-   width: 100%;
-   height: 100%;
-   background-color: white;
+.auth__login__wrapper {
+	margin-left: 10%;
+	width: 100%;
+	height: 25rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
 }
 
-.modal__close {
-   position: fixed;
-   top: 2rem;
-   right: 2rem;
-   width: 2rem;
-   height: 2rem;
-   text-align: right;
-   color: black;
-   cursor: pointer;
-   z-index: 5;
+.auth__container {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.auth__title {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.auth {}
+
+.avatar__title {
+	width: 100%;
+	max-width: 20rem;
+	font-size: 1.5rem;
+}
+
+.avatar__btn {
+	font-size: 1rem;
+}
+
+.name__container {
+	margin: 0.5rem;
+	width: 40%;
+	max-width: 45%;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.name__title {
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.name__input {
+	font-size: 1rem;
+	border-radius: 0.4rem;
+
+}
+
+.name__input::-webkit-input-placeholder {
+	position: relative;
+	left: 0;
+	display: block;
+	transition: all 0.5s ease-in-out;
+}
+
+.name__input:hover::-webkit-input-placeholder {
+	left: 0;
+	font-size: 0;
+}
+
+
+.email__title {
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.email__input {
+	font-size: 1rem;
+	border-radius: 0.4rem;
+
+}
+
+.email__input::-webkit-input-placeholder {
+	position: relative;
+	left: 0;
+	display: block;
+	transition: all 0.5s ease-in-out;
+}
+
+.email__input:hover::-webkit-input-placeholder {
+	left: 0;
+	font-size: 0;
+}
+
+.password__title {
+	font-size: 1.5rem;
+}
+
+.password__input {
+	font-size: 1rem;
+	border-radius: 0.4rem;
+}
+
+.password__input::-webkit-input-placeholder {
+	position: relative;
+	left: 0;
+	display: block;
+	transition: all 0.5s ease-in-out;
+}
+
+.password__input:hover::-webkit-input-placeholder {
+	left: 0;
+	font-size: 0;
+}
+
+.submit__data {
+	margin-top: 5%;
+	margin-left: 3%;
+	border-radius: 0.5rem;
+}
+
+.submit__data:hover {
+	color: white;
+	background-color: #333333;
+	transition: 0.3s;
+}
+
+.login__container {
+	width: 50%;
+	height: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+
+.login__title {
+	margin: 1rem 0;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.avatar {
+	max-width: 10rem;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar__img {
+	text-align: center;
+	width: 5rem;
+	height: 5rem;
+	background-color: blueviolet;
+	border-radius: 50%;
+}
+
+.avatar__name {
+	font-size: 3rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+}
+
+.quit__btn__modal {
+	text-align: center;
+	font-size: 2rem;
 }
 
 .modal__close:hover {
-   font-weight: 800;
-   cursor: pointer;
-   transition: 0.5s;
-   color: gray;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-.map {
-   width: 100wh;
-   height: 100vh;
+@media only screen and (max-width:500px) {
+	.auth__login__wrapper {
+		font-family: "Roboto", sans-serif;
+		font-size: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.auth__container {
+		width: 100%;
+	}
+
+	.login__container {
+		width: 100%;
+	}
 }
 
-.modal__slider__container {
-   width: 100%;
-   height: 100%;
-   margin-top: 0;
-   margin-bottom: 0;
+@media only screen and (max-width:768px) {
+	.auth__login__wrapper {
+		margin-left: 1%;
+		width: 100%;
+		height: 25rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-family: "Roboto", sans-serif;
+	}
+
+	.auth__title {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.login__title {
+		margin: 1rem 0;
+		font-size: 2rem;
+		font-weight: 600;
+	}
 }
 
-.modal__slider__attraction {
-   height: 100%;
-   position: relative;
+@media only screen and (max-width:650px) {
+	.auth__login__wrapper {
+		margin: 1%;
+		width: 100%;
+		max-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		font-family: "Roboto", sans-serif;
+	}
+
+	.login__title {
+		font-size: 2rem;
+		font-weight: 600;
+	}
 }
 
-.modal__slider__img {
-   margin: auto;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   max-width: 100%;
-   max-height: 100vh;
+@media only screen and (max-width:360px) {
+	.auth__login__wrapper {
+		width: 100%;
+		max-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		font-family: "Roboto", sans-serif;
+	}
+
+	.auth__title {
+		font-size: 1.1rem;
+		color: red;
+		margin: 0;
+	}
+
+	.login__title {
+		color: red;
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.avatar__title,
+	.name__title,
+	.email__title,
+	.password__title {
+		font-size: 0.9rem;
+	}
+
+	.name__input,
+	.email__input,
+	.password__input {
+		font-size: 0.8rem;
+	}
 }

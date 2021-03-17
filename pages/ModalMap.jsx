@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useCallback } from "react";
 import mapboxgl from "mapbox-gl";
-import styles from "../styles/modal.module.css";
+import styles from "../styles/modalMap.module.css";
 import CancelIcon from "@material-ui/icons/Cancel";
 
 mapboxgl.accessToken =
@@ -13,9 +13,12 @@ class ModalMap extends Component {
       lng: this.props.mapLon,
       lat: this.props.mapLat,
       zoom: 11,
+      active: 'fullscreen',
     };
+
     this.mapContainer = React.createRef();
   }
+
   componentDidMount() {
     this.getMap();
   }
@@ -32,7 +35,6 @@ class ModalMap extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log(this.props);
     if (prevProps !== this.props) {
       this.setState({
         lng: this.props.mapLon,
@@ -57,13 +59,13 @@ class ModalMap extends Component {
             className={styles.modal__body}
             onClick={(e) => e.stopPropagation}
           >
-            <div
-              className={styles.modal__close}
-              onClick={this.props.onModalClose}
-            >
-              <CancelIcon style={{ fontSize: 40 }}></CancelIcon>
-            </div>
-            <div ref={this.mapContainer} className={styles.map} />
+              <div
+                className={styles.modal__close}
+                onClick={this.props.onModalClose}
+              >
+                <CancelIcon style={{ fontSize: 40 }}></CancelIcon>
+              </div>
+              <div ref={this.mapContainer} className={styles.map} />
           </div>
         </div>
       </>
