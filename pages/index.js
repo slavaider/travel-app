@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 import { fetchAll } from "../store/actions";
 import LanguageIcon from "@material-ui/icons/Language";
 import CardTravelIcon from "@material-ui/icons/CardTravel";
-import Modal from "./modal";
+import Modal from "../components/modal";
 
 class Index extends React.Component {
   state = {
@@ -224,7 +224,7 @@ class Index extends React.Component {
             </div>
             {!this.state.isAuth ? (
               <div className={styles.auth__start}>
-                
+
               </div>
             ) : (
               <>
