@@ -243,7 +243,6 @@ class Index extends React.Component {
                     </div>
                 </header>
 
-
                 {this.props.isConnected ? (
                     <>
                         <div className={styles.main}>
