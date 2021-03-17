@@ -5,8 +5,8 @@ if (process.env.NODE_ENV !== 'test') {
     MONGODB_URI = process.env.MONGODB_URI
     MONGODB_DB = process.env.MONGODB_DB
 } else {
-    MONGODB_URI = "mongodb+srv://slavaider:azHfJgzbk3lYycSK@cluster0.tifvo.mongodb.net/TravelApp?retryWrites=true&w=majority"
-    MONGODB_DB = "TravelApp"
+    MONGODB_URI = "test"
+    MONGODB_DB = "test"
 }
 
 if (!MONGODB_URI) {

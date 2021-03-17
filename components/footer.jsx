@@ -3,7 +3,7 @@ import styles from "../styles/footer.module.css";
 
 const logo = [
   {
-    0: "./",
+    0: "./slavaider_avatar.jpg",
     1: "./avatar_victor.png",
   },
 ];
